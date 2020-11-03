@@ -29,6 +29,20 @@ final class Plugin implements PluginInterface, EventSubscriberInterface
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function deactivate(Composer $composer, IOInterface $io)
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function uninstall(Composer $composer, IOInterface $io)
+    {
+    }
+
+    /**
      * @return array<string, string>
      */
     public static function getSubscribedEvents(): array

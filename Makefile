@@ -19,13 +19,13 @@ build: ## Build docker images, required for current package environment
 	$(dc_bin) build
 
 latest: clean ## Install latest php dependencies
-	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --ansi --no-suggest --prefer-dist --prefer-stable
+	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --ansi --prefer-dist --prefer-stable
 
 install: clean ## Install regular php dependencies
-	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --prefer-dist --no-interaction --no-suggest
+	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --prefer-dist --no-interaction
 
 lowest: clean ## Install lowest php dependencies
-	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --ansi --no-suggest --prefer-dist --prefer-lowest
+	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --ansi --prefer-dist --prefer-lowest
 
 test: ## Execute php tests and linters
 	$(dc_bin) run $(RUN_APP_ARGS) composer test

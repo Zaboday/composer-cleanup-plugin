@@ -15,10 +15,10 @@
     ],
     "require": {
         "php": "^7.2",
-        "composer-plugin-api": "^1.0"
+        "composer-plugin-api": "^2.0"
     },
     "require-dev": {
-        "composer/composer": "^1.8.6",
+        "composer/composer": "^2.0",
         "phpstan/phpstan": "~0.12",
         "phpunit/phpunit": "~7.5",
         "symfony/var-dumper": "~3.2 || ^4.0"
